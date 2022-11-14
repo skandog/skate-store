@@ -1,0 +1,35 @@
+{
+  "name": "skate-store",
+  "version": "1.0.0",
+  "description": "E-commerce platform to sell skateboards",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -wirte .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skandog/skate-store.git"
+  },
+  "keywords": [],
+  "author": "Skandog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skandog/skate-store/issues"
+  },
+  "homepage": "https://github.com/skandog/skate-store#readme",
+  "dependencies": {
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.6",
+    "next": "^13.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
+}
