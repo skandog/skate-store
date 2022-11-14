@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Nav from '../nav'
 
 const Main = ({ children, router }) => {
   return (
@@ -9,9 +10,9 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Skate Store</title>
       </Head>
-      <body>
+      <Nav path={router.asPath}>
         <div className="container">{children}</div>
-      </body>
+      </Nav>
     </main>
   )
 }
