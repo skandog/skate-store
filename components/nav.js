@@ -29,8 +29,12 @@ const Nav = props => {
         </div>
         <div className="nav-item">
           <div className="search">
-            <input></input>
-            <FaSearch />
+            <input
+              type="text"
+              placeholder="Search..."
+              className="search-input"
+            ></input>
+            <FaSearch className="search-icon" />
           </div>
         </div>
       </div>
