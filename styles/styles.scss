@@ -17,7 +17,8 @@ nav {
     position: fixed;
     display: flex;
     flex-direction: column;
-    padding: 20px 20px;
+    padding: 20px;
+    margin: auto 0;
 }
 
 .nav-top {
@@ -38,6 +39,8 @@ nav {
     margin-right: 5px;
     border-style: none;
     background-color: transparent;
+    font-weight: 500;
+
     &::placeholder {
         color: $color-4;
     }
@@ -47,4 +50,19 @@ nav {
     height: 20px;
     width: 20px;
     color: $color-4;
+}
+
+.nav-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+
+}
+
+.next-link {
+    text-decoration: none;
+    color: #D88373;
+    font-weight: bold;
+    // margin-right: 50px;
 }
