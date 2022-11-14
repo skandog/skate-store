@@ -9,7 +9,9 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Skate Store</title>
       </Head>
-      <div className="container">{children}</div>
+      <body>
+        <div className="container">{children}</div>
+      </body>
     </main>
   )
 }
