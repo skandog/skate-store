@@ -1,13 +1,12 @@
 body {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding: 0;
   margin: 0;
 }
 
 nav {
-  background-color: #1c3144;
-  color: #f5e2c8;
+  background-color: #1C3144;
+  color: #F5E2C8;
   width: 100%;
   position: fixed;
   display: flex;
@@ -25,7 +24,7 @@ nav {
 .search {
   display: flex;
   align-items: center;
-  background-color: #f5e2c8;
+  background-color: #F5E2C8;
   border-radius: 10px;
   padding: 6px 20px;
 }
@@ -37,19 +36,19 @@ nav {
   font-weight: 500;
 }
 .search-input::-moz-placeholder {
-  color: #d88373;
+  color: #D88373;
 }
 .search-input:-ms-input-placeholder {
-  color: #d88373;
+  color: #D88373;
 }
 .search-input::placeholder {
-  color: #d88373;
+  color: #D88373;
 }
 
 .search-icon {
   height: 20px;
   width: 20px;
-  color: #d88373;
+  color: #D88373;
 }
 
 .nav-bottom {
@@ -61,7 +60,7 @@ nav {
 
 .next-link {
   text-decoration: none;
-  color: #d88373;
+  color: #D88373;
   font-weight: bold;
 }
 
@@ -73,39 +72,31 @@ nav {
   .nav-web {
     display: none;
   }
-
   .nav-mobile {
     display: block;
   }
-
-  .line1, .line2, .line3 {
-    margin-top:5px;
-    background-color:#fff;
-    width:25px;
-    height:3px;
-    display:block;
-    position:relative;
-    opacity:1.0;
-    border-radius:15%;
-    transition: all .3s;
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+    width: auto;
   }
-  
-  .line1.active {
-    transform: rotate(270deg);
-    opacity:0.0;
-    background-color:yellow;
-    top:5px;
+  .menu-list li {
+    margin-top: 10px;
   }
-  
-  .line2.active {
-    transform: rotate(45deg);
-    background-color:yellow;
+  .menu-list li:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width 0.2s;
   }
-  
-  .line3.active {
-    transform: rotate(-45deg);
-    background-color:yellow;
-    top:-7px;
+  .menu-list li:hover::after {
+    width: 100%;
   }
-  
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

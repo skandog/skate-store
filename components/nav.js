@@ -89,7 +89,7 @@ const Nav = props => {
             <img src="" />
           </div>
 
-          <ul class="menulist">
+          <ul class="menu-list">
             <li>
               <LinkItem
                 href="/board-1"
