@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import NextLink from 'next/link'
-import { FaSearch } from 'react-icons/fa'
+import { FaSearch, FaHamburger } from 'react-icons/fa'
 
 const LinkItem = ({ href, path, children, className }) => {
   const active = path === href

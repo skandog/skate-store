@@ -66,3 +66,13 @@ nav {
     font-weight: bold;
     // margin-right: 50px;
 }
+
+.nav-mob {
+    display: none;
+}
+
+@media screen and (min-width: 1780px) {
+    .nav-web {
+        display: none;
+    }
+}
