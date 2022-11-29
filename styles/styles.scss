@@ -83,7 +83,7 @@ nav {
 
     // Mobile menu items, centering and animation
     .menu-list {
-        display: flex;
+        display: none;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -144,4 +144,6 @@ nav {
         background-color: yellow;
         top: -7px;
     }
+
+
 }

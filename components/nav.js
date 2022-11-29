@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import NextLink from 'next/link'
+import { useState } from 'react'
 import { FaSearch, FaHamburger } from 'react-icons/fa'
 
 const LinkItem = ({ href, path, children, className }) => {
@@ -13,6 +14,11 @@ const LinkItem = ({ href, path, children, className }) => {
 
 const Nav = props => {
   const { path } = props
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleToggle = () => {
+    setMenuOpen(!menuOpen)
+  }
 
   return (
     <nav {...props}>
@@ -80,7 +86,7 @@ const Nav = props => {
       </div>
       <div className="nav-mobile">
         <div class="navigation">
-          <span id="closebtn" onclick="navToggle()">
+          <span id="closebtn" onClick={handleToggle}>
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
