@@ -86,9 +86,9 @@ const Nav = props => {
         </div>
       </div>
       <div className="nav-mobile">
-        <div class="navigation">
+        <div className="navigation">
           <div className="nav-mob-icons">
-            <div class="logo-mobile">
+            <div className="logo-mobile">
               <Image
                 src="/img/oster-944x942.png"
                 alt="logo"

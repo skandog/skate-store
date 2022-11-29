@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+.main-container {
+  margin-top: 300px;
+}
+
 nav {
   background-color: #1C3144;
   color: #F5E2C8;
