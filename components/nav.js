@@ -87,15 +87,22 @@ const Nav = props => {
       </div>
       <div className="nav-mobile">
         <div class="navigation">
-          <span id="closebtn" onClick={handleToggle}>
-            <span className={isMenuOpen ? 'line1 active' : 'line1'}></span>
-            <span className={isMenuOpen ? 'line2 active' : 'line2'}></span>
-            <span className={isMenuOpen ? 'line3 active' : 'line3'}></span>
-          </span>
-          <div class="logo">
-            <img src="" />
-          </div>
+          <div className="nav-mob-icons">
+            <div class="logo-mobile">
+              <Image
+                src="/img/oster-944x942.png"
+                alt="logo"
+                width="64"
+                height="64"
+              />
+            </div>
 
+            <span id="closebtn" onClick={handleToggle}>
+              <span className={isMenuOpen ? 'line1 active' : 'line1'}></span>
+              <span className={isMenuOpen ? 'line2 active' : 'line2'}></span>
+              <span className={isMenuOpen ? 'line3 active' : 'line3'}></span>
+            </span>
+          </div>
           <ul className={isMenuOpen ? `active menu-list` : `menu-list`}>
             <li>
               <LinkItem

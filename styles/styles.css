@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding: 0;
@@ -75,6 +79,12 @@ nav {
   .nav-mobile {
     display: block;
   }
+  .nav-mob-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
   .menu-list {
     display: none;
     justify-content: center;
@@ -96,7 +106,7 @@ nav {
     display: block;
     width: 0;
     height: 1px;
-    background: #fff;
+    background: #F5E2C8;
     transition: width 0.2s;
   }
   .menu-list li:hover::after {
@@ -118,16 +128,16 @@ nav {
   .line1.active {
     transform: rotate(270deg);
     opacity: 0;
-    background-color: yellow;
+    background-color: #D88373;
     top: 5px;
   }
   .line2.active {
     transform: rotate(45deg);
-    background-color: yellow;
+    background-color: #D88373;
   }
   .line3.active {
     transform: rotate(-45deg);
-    background-color: yellow;
+    background-color: #D88373;
     top: -7px;
   }
 }/*# sourceMappingURL=styles.css.map */
