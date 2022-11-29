@@ -14,10 +14,11 @@ const LinkItem = ({ href, path, children, className }) => {
 
 const Nav = props => {
   const { path } = props
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleToggle = () => {
-    setMenuOpen(!menuOpen)
+    setIsMenuOpen(!isMenuOpen)
+    console.log('isMenuopen', isMenuOpen)
   }
 
   return (
@@ -95,7 +96,7 @@ const Nav = props => {
             <img src="" />
           </div>
 
-          <ul class="menu-list">
+          <ul className={!isMenuOpen ? `active menu-list` : `menu-list`}>
             <li>
               <LinkItem
                 href="/board-1"

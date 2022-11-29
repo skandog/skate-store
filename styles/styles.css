@@ -76,7 +76,7 @@ nav {
     display: block;
   }
   .menu-list {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -84,6 +84,9 @@ nav {
     list-style: none;
     transition: all 0.5s ease-in-out;
     width: auto;
+  }
+  .menu-list.active {
+    display: flex;
   }
   .menu-list li {
     margin-top: 10px;
