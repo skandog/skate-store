@@ -3,10 +3,10 @@ import NextLink from 'next/link'
 import { useState } from 'react'
 import { FaSearch, FaHamburger } from 'react-icons/fa'
 
-const LinkItem = ({ href, path, children, className }) => {
+const LinkItem = ({ href, path, children, className, onClick }) => {
   const active = path === href
   return (
-    <NextLink className={className} href={href}>
+    <NextLink className={className} href={href} onClick={onClick}>
       {children}
     </NextLink>
   )
@@ -88,45 +88,48 @@ const Nav = props => {
       <div className="nav-mobile">
         <div class="navigation">
           <span id="closebtn" onClick={handleToggle}>
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
+            <span className={isMenuOpen ? 'line1 active' : 'line1'}></span>
+            <span className={isMenuOpen ? 'line2 active' : 'line2'}></span>
+            <span className={isMenuOpen ? 'line3 active' : 'line3'}></span>
           </span>
           <div class="logo">
             <img src="" />
           </div>
 
-          <ul className={!isMenuOpen ? `active menu-list` : `menu-list`}>
+          <ul className={isMenuOpen ? `active menu-list` : `menu-list`}>
             <li>
               <LinkItem
-                href="/board-1"
+                href="#"
                 path={path}
                 className="mob-menu-item next-link"
+                onClick={handleToggle}
               >
                 Board 1
               </LinkItem>
             </li>
             <li>
               <LinkItem
-                href="/board-2"
+                href="#"
                 path={path}
                 className="mob-menu-item next-link"
+                onClick={handleToggle}
               >
                 Board 2
               </LinkItem>
             </li>
             <li>
               <LinkItem
-                href="/board-3"
+                href="#"
                 path={path}
                 className="mob-menu-item next-link"
+                onClick={handleToggle}
               >
                 Board 3
               </LinkItem>
             </li>
             <li>
               <LinkItem
-                href="/board-4"
+                href="#"
                 path={path}
                 className="mob-menu-item next-link"
               >
@@ -135,7 +138,7 @@ const Nav = props => {
             </li>
             <li>
               <LinkItem
-                href="/board-5"
+                href="#"
                 path={path}
                 className="mob-menu-item next-link"
               >
