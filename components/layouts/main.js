@@ -11,9 +11,8 @@ const Main = ({ children, router }) => {
         <title>Skate Store</title>
         <link rel="icon" type="image/png" href="/img/oster-944x942.png" />
       </Head>
-      <Nav path={router.asPath}>
-        <div className="container">{children}</div>
-      </Nav>
+      <Nav path={router.asPath} />
+      <div className="main-container">{children}</div>
     </main>
   )
 }

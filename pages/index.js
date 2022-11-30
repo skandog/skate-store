@@ -1,5 +1,9 @@
 const Page = () => {
-  return <h1 className="main-container">something</h1>
+  return (
+    <div>
+      <h1>something</h1>
+    </div>
+  )
 }
 
 export default Page
