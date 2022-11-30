@@ -9,7 +9,7 @@ body {
 }
 
 .main-container {
-  padding-top: 108px;
+  padding-top: 141px;
 }
 
 nav {
@@ -77,8 +77,14 @@ nav {
 }
 
 .banner {
+  height: 80vh;
   display: flex;
   justify-content: center;
+  background-image: url(../public/img/nick-iliasov-i0fCUofGjV8-unsplash.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden;
 }
 
 @media screen and (max-width: 780px) {
@@ -93,6 +99,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+  .main-container {
+    padding-top: 108px;
   }
   .menu-list {
     display: none;
