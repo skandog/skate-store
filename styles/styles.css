@@ -82,7 +82,7 @@ nav {
   display: flex;
   justify-content: center;
   background-image: url(../public/img/nick-iliasov-i0fCUofGjV8-unsplash.jpg);
-  background-size: cover;
+  background-size: contain;
   -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 90%);
           clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 90%);
   overflow: hidden;
@@ -96,6 +96,9 @@ nav {
 
 .banner-img {
   transform: rotate(-15deg);
+}
+.banner-img:hover {
+  transform: rotate(0deg);
 }
 
 @media screen and (max-width: 780px) {
