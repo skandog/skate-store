@@ -10,6 +10,7 @@ body {
 
 .main-container {
   padding-top: 141px;
+  background-color: #F5E2C8;
 }
 
 nav {
@@ -82,9 +83,15 @@ nav {
   justify-content: center;
   background-image: url(../public/img/nick-iliasov-i0fCUofGjV8-unsplash.jpg);
   background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 90%);
   overflow: hidden;
+}
+
+.banner-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 780px) {
