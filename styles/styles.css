@@ -78,7 +78,7 @@ nav {
 }
 
 .banner {
-  height: 80vh;
+  height: calc(100vh - 141px);
   display: flex;
   justify-content: center;
   background-image: url(../public/img/nick-iliasov-i0fCUofGjV8-unsplash.jpg);
