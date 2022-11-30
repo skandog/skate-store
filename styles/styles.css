@@ -94,6 +94,10 @@ nav {
   align-items: center;
 }
 
+.banner-img {
+  transform: rotate(-15deg);
+}
+
 @media screen and (max-width: 780px) {
   .nav-web {
     display: none;

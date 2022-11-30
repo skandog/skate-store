@@ -17,7 +17,7 @@ body {
 
 .main-container {
     padding-top: 141px;
-background-color: $color-3;
+    background-color: $color-3;
 }
 
 
@@ -99,7 +99,9 @@ nav {
     align-items: center;
 }
 
-
+.banner-img {
+    transform: rotate(-15deg);
+}
 
 @media screen and (max-width: 780px) {
     .nav-web {
