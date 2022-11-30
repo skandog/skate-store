@@ -107,6 +107,14 @@ nav {
     }
 }
 
+.arrow-button{
+    position: absolute;
+    right: 8%;
+    top: 25%;
+    color: #F5E2C8;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 780px) {
     .nav-web {
         display: none;
