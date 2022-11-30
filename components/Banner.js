@@ -3,7 +3,9 @@ import Image from 'next/image'
 const Banner = ({ src }) => {
   return (
     <div className="banner">
-      <Image src={src} />
+      <div className="banner-item">
+        <Image src={src} width={200}/>
+      </div>
     </div>
   )
 }

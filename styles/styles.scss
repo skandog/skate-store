@@ -19,6 +19,8 @@ body {
     padding-top: 108px;
 }
 
+
+
 nav {
     background-color: $color-1;
     color: $color-3;
@@ -78,6 +80,11 @@ nav {
 
 .nav-mobile {
     display: none;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 780px) {
