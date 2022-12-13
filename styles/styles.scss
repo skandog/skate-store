@@ -135,6 +135,9 @@ nav {
 
     .main-container {
         padding-top: 108px;
+        &.active{
+            padding-top: 308px; 
+        }
     }
 
 

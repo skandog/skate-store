@@ -1,9 +1,14 @@
 import Head from 'next/head'
 import Nav from '../nav'
+import { useState } from 'react'
 
 const Main = ({ children, router }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-
+  const handleToggle = () => {
+    setIsMenuOpen(!isMenuOpen)
+    console.log('isMenuopen', isMenuOpen)
+  }
   return (
     <main>
       <Head>
@@ -13,8 +18,15 @@ const Main = ({ children, router }) => {
         <title>Skate Store</title>
         <link rel="icon" type="image/png" href="/img/oster-944x942.png" />
       </Head>
-      <Nav path={router.asPath} />
-      <div className="main-container">{children}</div>
+      <Nav
+        path={router.asPath}
+        handleToggle={handleToggle}
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
+      <div className={isMenuOpen ? 'main-container active' : 'main-container'}>
+        {children}
+      </div>
     </main>
   )
 }

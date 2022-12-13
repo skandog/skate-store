@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import NextLink from 'next/link'
-import { useState } from 'react'
 import { FaSearch, FaHamburger } from 'react-icons/fa'
 import products from '../public/products'
 
@@ -14,13 +13,7 @@ const LinkItem = ({ href, path, children, className, onClick, products }) => {
 }
 
 const Nav = props => {
-  const { path } = props
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const handleToggle = () => {
-    setIsMenuOpen(!isMenuOpen)
-    console.log('isMenuopen', isMenuOpen)
-  }
+  const { path, isMenuOpen, setIsMenuOpen, handleToggle } = props
 
   return (
     <nav {...props}>
