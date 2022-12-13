@@ -49,7 +49,7 @@ const Nav = props => {
           {products.map(board => {
             return (
               <LinkItem
-                href={'/boards/' + board.path}
+                href={'/boards' + board.path}
                 path={path}
                 className="nav-menu-item next-link"
               >
@@ -82,7 +82,7 @@ const Nav = props => {
               return (
                 <li>
                   <LinkItem
-                    href={'/boards/' + board.path}
+                    href={'/boards' + board.path}
                     path={path}
                     className="mob-menu-item next-link"
                     onClick={handleToggle}
