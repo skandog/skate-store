@@ -82,7 +82,7 @@ nav {
   display: flex;
   justify-content: center;
   background-image: url(../public/img/nick-iliasov-i0fCUofGjV8-unsplash.jpg);
-  background-size: contain;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -103,8 +103,12 @@ nav {
 .board-page-container {
   height: calc(100vh - 141px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
+  color: #D88373;
+  text-shadow: 1px 1px 1px #1C3144;
 }
 
 @media screen and (max-width: 780px) {
