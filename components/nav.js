@@ -81,6 +81,20 @@ const Nav = props => {
             </span>
           </div>
           <ul className={isMenuOpen ? `active menu-list` : `menu-list`}>
+            {products.map(board => {
+              return (
+                <li>
+                  <LinkItem
+                    href={board.path}
+                    path={path}
+                    className="mob-menu-item next-link"
+                    onClick={handleToggle}
+                  >
+                    {board.name}
+                  </LinkItem>
+                </li>
+              )
+            })}
             <li>
               <LinkItem
                 href="#"
