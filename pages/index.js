@@ -1,19 +1,13 @@
 import { useState, useEffect } from 'react'
 import Banner from '../components/Banner'
-import board1 from '../public/img/PngItem_3637665.png'
-import board2 from '../public/img/PngItem_3637674.png'
-import board3 from '../public/img/PngItem_3637754.png'
-import blind from '../public/img/PngItem_5645814.png'
-import antiHero from '../public/img/PngItem_6562957.png'
+
 import products from '../public/products.js'
 
 const Page = () => {
   const [currentBoard, setCurrentBoard] = useState(0)
 
-  // const boards = [board1, board2, board3, blind, antiHero]
-
   const boards = products
-  console.log(boards)
+  //   console.log(boards)
 
   const [count, setCount] = useState(0)
   const [mousedOver, setMousedOver] = useState(false)
