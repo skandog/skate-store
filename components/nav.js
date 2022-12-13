@@ -2,6 +2,7 @@ import Image from 'next/image'
 import NextLink from 'next/link'
 import { useState } from 'react'
 import { FaSearch, FaHamburger } from 'react-icons/fa'
+import products from '../public/products'
 
 const LinkItem = ({ href, path, children, className, onClick, products }) => {
   const active = path === href
@@ -48,41 +49,17 @@ const Nav = props => {
           </div>
         </div>
         <div className="nav-bottom">
-          <LinkItem
-            href="/board-1"
-            path={path}
-            className="nav-menu-item next-link"
-          >
-            Board 1
-          </LinkItem>
-          <LinkItem
-            href="/board-2"
-            path={path}
-            className="nav-menu-item next-link"
-          >
-            Board 2
-          </LinkItem>
-          <LinkItem
-            href="/board-3"
-            path={path}
-            className="nav-menu-item next-link"
-          >
-            Board 3
-          </LinkItem>
-          <LinkItem
-            href="/board-4"
-            path={path}
-            className="nav-menu-item next-link"
-          >
-            Board 4
-          </LinkItem>
-          <LinkItem
-            href="/board-5"
-            path={path}
-            className="nav-menu-item next-link"
-          >
-            Board 5
-          </LinkItem>
+          {products.map(board => {
+            return (
+              <LinkItem
+                href={board.path}
+                path={path}
+                className="nav-menu-item next-link"
+              >
+                {board.name}
+              </LinkItem>
+            )
+          })}
         </div>
       </div>
       <div className="nav-mobile">
