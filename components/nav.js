@@ -30,7 +30,9 @@ const Nav = props => {
             </LinkItem>
           </div>
           <div className="nav-item">
-            <h1>Skate Store</h1>
+            <LinkItem href="/" path={path} className="next-link">
+              <h1>Skate Store</h1>
+            </LinkItem>
           </div>
           <div className="nav-item">
             <div className="search">
