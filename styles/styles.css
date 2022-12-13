@@ -94,11 +94,17 @@ nav {
   align-items: center;
 }
 
-.banner-img {
+.banner-img-container {
   transform: rotate(-15deg);
 }
+
 .banner-img:hover {
-  transform: rotate(0deg);
+  transform: rotate(10deg);
+  z-index: -10;
+}
+
+.banner-img {
+  z-index: -1;
 }
 
 .arrow-button {
@@ -124,9 +130,10 @@ nav {
   }
   .main-container {
     padding-top: 108px;
+    z-index: 1;
   }
   .main-container.active {
-    padding-top: 308px;
+    padding-top: 285px;
   }
   .menu-list {
     display: none;

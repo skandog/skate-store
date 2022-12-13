@@ -88,54 +88,6 @@ const Nav = props => {
                 </li>
               )
             })}
-            <li>
-              <LinkItem
-                href="#"
-                path={path}
-                className="mob-menu-item next-link"
-                onClick={handleToggle}
-              >
-                Board 1
-              </LinkItem>
-            </li>
-            <li>
-              <LinkItem
-                href="#"
-                path={path}
-                className="mob-menu-item next-link"
-                onClick={handleToggle}
-              >
-                Board 2
-              </LinkItem>
-            </li>
-            <li>
-              <LinkItem
-                href="#"
-                path={path}
-                className="mob-menu-item next-link"
-                onClick={handleToggle}
-              >
-                Board 3
-              </LinkItem>
-            </li>
-            <li>
-              <LinkItem
-                href="#"
-                path={path}
-                className="mob-menu-item next-link"
-              >
-                Board 4
-              </LinkItem>
-            </li>
-            <li>
-              <LinkItem
-                href="#"
-                path={path}
-                className="mob-menu-item next-link"
-              >
-                Board 5
-              </LinkItem>
-            </li>
           </ul>
         </div>
       </div>

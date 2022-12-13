@@ -91,6 +91,7 @@ nav {
     background-size: contain;
     clip-path: polygon(20% 0, 100% 10%, 80% 100%, 0 90%);
     overflow: hidden;
+
 }
 
 .banner-item {
@@ -99,12 +100,21 @@ nav {
     align-items: center;
 }
 
-.banner-img {
+.banner-img-container {
     transform: rotate(-15deg);
 
-    &:hover {
-        transform: rotate(0deg)
-    }
+    // &:hover {
+    //     transform: rotate(0deg)
+    // }
+}
+
+.banner-img:hover {
+    transform: rotate(10deg);
+    z-index: -10;
+}
+
+.banner-img {
+    z-index: -1;
 }
 
 .arrow-button {
@@ -135,8 +145,10 @@ nav {
 
     .main-container {
         padding-top: 108px;
-        &.active{
-            padding-top: 308px; 
+        z-index: 1;
+
+        &.active {
+            padding-top: calc(108px + 145px + 32px);
         }
     }
 

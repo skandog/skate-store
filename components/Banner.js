@@ -5,7 +5,14 @@ const Banner = ({ src, handleClick }) => {
   return (
     <div className="banner">
       <div className="banner-item">
-        <Image alt="skate-board" className="banner-img" src={src} width={150} />
+        <div className="banner-img-container">
+          <Image
+            alt="skate-board"
+            className="banner-img"
+            src={src}
+            width={150}
+          />
+        </div>
 
         <div className="arrow-button" onClick={handleClick}>
           <FaArrowAltCircleRight className="banner-arrow" size={50} />
