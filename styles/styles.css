@@ -134,6 +134,7 @@ nav {
     list-style: none;
     transition: all 0.5s ease-in-out;
     width: auto;
+    z-index: 100;
   }
   .menu-list.active {
     display: flex;

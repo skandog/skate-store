@@ -107,7 +107,7 @@ nav {
     }
 }
 
-.arrow-button{
+.arrow-button {
     position: absolute;
     right: 8%;
     top: 25%;
@@ -137,6 +137,8 @@ nav {
         padding-top: 108px;
     }
 
+
+
     // Mobile menu items, centering and animation
     .menu-list {
         display: none;
@@ -148,6 +150,7 @@ nav {
         transition: all .5s ease-in-out;
 
         width: auto;
+        z-index: 100;
 
         &.active {
             display: flex;
