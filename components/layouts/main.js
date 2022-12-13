@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Nav from '../nav'
 
 const Main = ({ children, router }) => {
+
+
   return (
     <main>
       <Head>
