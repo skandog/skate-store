@@ -135,6 +135,9 @@ nav {
 
 .board-page-container {
     height: calc(100vh - $main-nav-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 780px) {
