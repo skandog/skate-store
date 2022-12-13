@@ -100,6 +100,10 @@ nav {
   cursor: pointer;
 }
 
+.board-page-container {
+  height: calc(100vh - 141px);
+}
+
 @media screen and (max-width: 780px) {
   .nav-web {
     display: none;
@@ -122,6 +126,9 @@ nav {
   }
   .main-container.active {
     padding-top: 285px;
+  }
+  .board-page-container {
+    height: calc(100vh - 108px);
   }
   .menu-list {
     display: none;

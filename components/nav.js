@@ -20,12 +20,14 @@ const Nav = props => {
       <div className="nav-web">
         <div className="nav-top">
           <div className="nav-item">
-            <Image
-              src="/img/oster-944x942.png"
-              alt="logo"
-              width="64"
-              height="64"
-            />
+            <LinkItem href="/" path={path}>
+              <Image
+                src="/img/oster-944x942.png"
+                alt="logo"
+                width="64"
+                height="64"
+              />
+            </LinkItem>
           </div>
           <div className="nav-item">
             <h1>Skate Store</h1>
@@ -45,7 +47,7 @@ const Nav = props => {
           {products.map(board => {
             return (
               <LinkItem
-                href={board.path}
+                href={'/boards/' + board.path}
                 path={path}
                 className="nav-menu-item next-link"
               >
@@ -78,7 +80,7 @@ const Nav = props => {
               return (
                 <li>
                   <LinkItem
-                    href={board.path}
+                    href={'/boards/' + board.path}
                     path={path}
                     className="mob-menu-item next-link"
                     onClick={handleToggle}

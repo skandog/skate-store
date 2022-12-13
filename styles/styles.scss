@@ -132,6 +132,11 @@ nav {
     cursor: pointer;
 }
 
+
+.board-page-container {
+    height: calc(100vh - $main-nav-height);
+}
+
 @media screen and (max-width: 780px) {
     .nav-web {
         display: none;
@@ -159,14 +164,13 @@ nav {
 
         &.active {
             padding-top: calc($mob-nav-top-height + $mob-nav-bottom-height);
-
-
-
         }
-
 
     }
 
+    .board-page-container {
+        height: calc(100vh - $mob-nav-top-height);
+    }
 
 
     // Mobile menu items, centering and animation
