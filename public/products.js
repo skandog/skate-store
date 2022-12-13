@@ -7,7 +7,7 @@ import antiHero from '../public/img/PngItem_6562957.png'
 class SkateBoard {
   constructor(name, img) {
     this.name = name
-    this.img = img.src
+    this.img = img
   }
 }
 
@@ -16,6 +16,6 @@ let DeathWish = new SkateBoard('DeathWish', deathwish)
 let Splash = new SkateBoard('Splash', splash)
 let Blind = new SkateBoard('Blind', blind)
 let AntiHero = new SkateBoard('AntiHero', antiHero)
-const data = { Bape, DeathWish, Splash, Blind, AntiHero }
+const products = [Bape, DeathWish, Splash, Blind, AntiHero]
 
-export default data
+export default products

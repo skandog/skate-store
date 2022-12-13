@@ -3,7 +3,7 @@ import NextLink from 'next/link'
 import { useState } from 'react'
 import { FaSearch, FaHamburger } from 'react-icons/fa'
 
-const LinkItem = ({ href, path, children, className, onClick }) => {
+const LinkItem = ({ href, path, children, className, onClick, products }) => {
   const active = path === href
   return (
     <NextLink className={className} href={href} onClick={onClick}>

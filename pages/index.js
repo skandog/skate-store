@@ -5,13 +5,15 @@ import board2 from '../public/img/PngItem_3637674.png'
 import board3 from '../public/img/PngItem_3637754.png'
 import blind from '../public/img/PngItem_5645814.png'
 import antiHero from '../public/img/PngItem_6562957.png'
-import data from '../public/data.js'
+import products from '../public/products.js'
 
 const Page = () => {
-  console.log(data)
   const [currentBoard, setCurrentBoard] = useState(0)
 
-  const boards = [board1, board2, board3, blind, antiHero]
+  // const boards = [board1, board2, board3, blind, antiHero]
+
+  const boards = products
+  console.log(boards)
 
   const [count, setCount] = useState(0)
   const [mousedOver, setMousedOver] = useState(false)
@@ -48,7 +50,7 @@ const Page = () => {
       onMouseOver={() => setMousedOver(true)}
       onMouseOut={() => setMousedOver(false)}
     >
-      <Banner src={boards[count]} handleClick={handleClick} />
+      <Banner src={boards[count].img} handleClick={handleClick} />
     </div>
   )
 }
