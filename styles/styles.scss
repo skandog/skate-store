@@ -3,6 +3,10 @@ $color-2: #47682C;
 $color-3: #F5E2C8;
 $color-4: #D88373;
 
+$main-nav-height: 141px;
+$mob-nav-top-height: 108px;
+$mob-nav-bottom-height: calc(145px + 32px);
+
 * {
     box-sizing: border-box;
 }
@@ -16,8 +20,9 @@ body {
 }
 
 .main-container {
-    padding-top: 141px;
+    padding-top: $main-nav-height;
     background-color: $color-3;
+
 }
 
 
@@ -84,12 +89,12 @@ nav {
 }
 
 .banner {
-    height: calc(100vh - 141px);
+    height: calc(100vh - $main-nav-height);
     display: flex;
     justify-content: center;
     background-image: url(../public/img/nick-iliasov-i0fCUofGjV8-unsplash.jpg);
     background-size: contain;
-    clip-path: polygon(20% 0, 100% 10%, 80% 100%, 0 90%);
+    // clip-path: polygon(20% 0, 100% 10%, 80% 100%, 0 90%);
     overflow: hidden;
 
 }
@@ -101,26 +106,28 @@ nav {
 }
 
 .banner-img-container {
-    transform: rotate(-15deg);
+
+    // transform: rotate(-15deg);
 
     // &:hover {
     //     transform: rotate(0deg)
     // }
+    // z-index: 1;
 }
 
 .banner-img:hover {
-    transform: rotate(10deg);
-    z-index: -10;
+    // position: relative;
+    // transform: rotate(15deg);
 }
 
 .banner-img {
-    z-index: -1;
+    // z-index: -1;
 }
 
 .arrow-button {
-    position: absolute;
-    right: 8%;
-    top: 25%;
+    position: relative;
+    right: -85%;
+    top: -35%;
     color: #F5E2C8;
     cursor: pointer;
 }
@@ -142,14 +149,22 @@ nav {
         width: 100%;
     }
 
+    .banner {
+        height: calc(100vh - $mob-nav-top-height)
+    }
 
     .main-container {
-        padding-top: 108px;
+        padding-top: $mob-nav-top-height;
         z-index: 1;
 
         &.active {
-            padding-top: calc(108px + 145px + 32px);
+            padding-top: calc($mob-nav-top-height + $mob-nav-bottom-height);
+
+
+
         }
+
+
     }
 
 

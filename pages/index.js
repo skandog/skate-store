@@ -24,7 +24,7 @@ const Page = () => {
       return () => clearInterval(timer)
     } else {
       // otherwise (not moused over), reset the counter
-      setCount(0)
+      // setCount(0)
     }
     // the dependency on mousedOver means that this effect is fired
     // every time mousedOver changes

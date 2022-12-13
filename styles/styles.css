@@ -83,8 +83,6 @@ nav {
   justify-content: center;
   background-image: url(../public/img/nick-iliasov-i0fCUofGjV8-unsplash.jpg);
   background-size: contain;
-  -webkit-clip-path: polygon(20% 0, 100% 10%, 80% 100%, 0 90%);
-          clip-path: polygon(20% 0, 100% 10%, 80% 100%, 0 90%);
   overflow: hidden;
 }
 
@@ -94,23 +92,10 @@ nav {
   align-items: center;
 }
 
-.banner-img-container {
-  transform: rotate(-15deg);
-}
-
-.banner-img:hover {
-  transform: rotate(10deg);
-  z-index: -10;
-}
-
-.banner-img {
-  z-index: -1;
-}
-
 .arrow-button {
-  position: absolute;
-  right: 8%;
-  top: 25%;
+  position: relative;
+  right: -85%;
+  top: -35%;
   color: #F5E2C8;
   cursor: pointer;
 }
@@ -127,6 +112,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+  .banner {
+    height: calc(100vh - 108px);
   }
   .main-container {
     padding-top: 108px;
