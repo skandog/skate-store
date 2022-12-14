@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding: 0;
@@ -112,11 +108,25 @@ nav {
   height: calc(100vh - 141px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: 1.5rem;
   color: #D88373;
   text-shadow: 1px 1px 1px #1C3144;
+}
+
+.product-info {
+  width: 50%;
+  height: 90%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-page-img {
+  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 780px) {
