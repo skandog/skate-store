@@ -21,7 +21,13 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin: auto 0;
+  align-items: center;
+}
+
+.nav-web {
+  display: block;
+  width: 80%;
+  max-width: 1600px;
 }
 
 .nav-top {
@@ -43,6 +49,8 @@ nav {
   border-style: none;
   background-color: transparent;
   font-weight: 500;
+  color: #D88373;
+  font-weight: bold;
 }
 .search-input::-moz-placeholder {
   color: #D88373;
